@@ -3,7 +3,7 @@
 The project demonstrates how the exchange of custom tokens is done. Here we use [UniswapV2Router02](https://docs.uniswap.org/contracts/v2/reference/smart-contracts/router-02) to prevent interference between separate transactions. The tokens conform ERC-20 protocol. In [swapping function](https://docs.uniswap.org/contracts/v2/reference/smart-contracts/router-02#swapexacttokensfortokens) we set parameter ```amountOutMin``` to ```0```, but in production you should be carefull. For a real project, this value should be calculated using our SDK or the price oracle - this helps leads to uncharacteristically low prices for the case, which may be the result of a front or any other type of price manipulation.
 
 ## Building and running:
-Preliminary add your ALCHEMY_API_KEY to environment variables.
+Preliminary add your ```ALCHEMY_API_KEY``` to environment variables.
 ```
 npm i
 npx hardhat test
